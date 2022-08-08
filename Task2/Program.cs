@@ -7,7 +7,7 @@
 Console.Write("Enter first number: ");
 int firstNumber = Convert.ToInt32(Console.ReadLine());
 
-System.Console.Write("Enter second number: ");
+Console.Write("Enter second number: ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 if (firstNumber < secondNumber)

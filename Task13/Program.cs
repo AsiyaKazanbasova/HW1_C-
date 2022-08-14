@@ -6,5 +6,6 @@
 
 string number = Console.ReadLine();
 
-Console.WriteLine($"The third digit is: {number[2]}");
-Console.WriteLine("There is no third digit");
+if (number.Length < 3) Console.WriteLine("There is no third digit");
+
+else Console.WriteLine($"The third digit is: {number[2]}");

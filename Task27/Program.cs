@@ -6,16 +6,14 @@
 
 Console.Write("Enter a number: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int GetDigitsSum(int num)
+int GetSumDigits(int number)
 {
     int sum = 0;
-    int i = 0;
     while (number > 0)
     {
+        sum += number % 10;
         number /=10;
-        sum += number;
-        i++;
     }
     return sum;
 }
-Console.WriteLine($"Digits sum of {number} = {GetDigitsSum(number)}");
+Console.WriteLine($"Digits sum of {number} = {GetSumDigits(number)}");

@@ -7,14 +7,13 @@
 Console.Write("Enter any decimal number: ");
 int decimalNumber = Convert.ToInt32(Console.ReadLine());
 
-int GetBinaryNumber(int binaryNumber)
+void ConvertToBin(int binaryNumber)
 {
-    int result = 0;
-    while (decimalNumber < 2)
+    if (binaryNumber == 0)
     {
-        result += decimalNumber % 2;
-        binaryNumber /= 2;
+        return;
     }
-    return result;
+    ConvertToBin(binaryNumber / 2);
+    Console.Write(binaryNumber % 2);
 }
-Console.WriteLine($"Decimal number {decimalNumber} converted to binary = {GetBinaryNumber(decimalNumber)}");
+ConvertToBin(decimalNumber);

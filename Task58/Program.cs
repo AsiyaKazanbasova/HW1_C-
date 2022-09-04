@@ -10,7 +10,7 @@ Console.Write("Enter a number of rows of the first matrix (m): ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter a number of columns of the first (as well as a number of rows of the second) matrix (n): ");
 int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Enter a number of columns of the second matrix (p)): ");
+Console.Write("Enter a number of columns of the second matrix (p): ");
 int p = Convert.ToInt32(Console.ReadLine());
 
 void FillArray(int[,] array)
